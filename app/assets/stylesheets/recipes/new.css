@@ -33,7 +33,7 @@
             margin: 10px 0;
         }
 
-        .recipe-name-text {
+        .recipe-title-text {
             width: 100%;
             height: 35px;
             padding: 5px 10px;
@@ -53,9 +53,10 @@
 
             .quantity {
                 width: 100px;
+                margin-bottom: 3px;
             }
 
-        .add-food {
+        .add-form {
             background-color: #BABABA;
             width: 100px;
             margin-top: 10px;
@@ -63,25 +64,31 @@
             text-align: center;
         }
 
-        .add-food:active {
+        .add-form:active {
             position: relative;
             top: 2px;
             left: 1px;
             box-shadow: none;
         }
 
-            .add-food-btn {
+            #add-food-btn {
                 display: inline-block;
                 color: white;
                 font-size: 14px;
                 text-decoration: none;
             }
 
-        .cooking-method-text {
+            #add-procedure-btn {
+                display: inline-block;
+                color: white;
+                font-size: 14px;
+                text-decoration: none;
+            }
+
+        .cooking-method {
             width: 100%;
-            height: 300px;
-            padding: 5px 10px;
-            font-size: 16px;
+            height: 80px;
+            margin-bottom: 3px;
         }
 
             .recipe-post-text {
