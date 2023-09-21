@@ -8,11 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=M+PLUS+Rounded+1c:wght@300&family=Noto+Sans+JP:wght@300&family=Oswald:wght@700&family=Rampart+One&family=Roboto:wght@100&family=Space+Grotesk:wght@700&family=Work+Sans:ital,wght@0,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
     <%= yield %>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   </body>
 </html>
