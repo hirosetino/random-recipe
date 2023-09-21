@@ -1,0 +1,107 @@
+body {
+    background-color: #F3F3F3;
+}
+
+    .main-top {
+        background-image: url('background.jpg');
+        background-size: cover;
+        height: 450px;
+        margin-top: 1px;
+        padding: 20px 0;
+    }
+
+        .main-top-text {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #635F5B;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .swiper-container {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+        
+        
+            .infinite-slider .swiper-wrapper {
+                transition-timing-function: linear;
+            }
+            
+            
+            .infinite-slider .swiper-slide {
+                height: 320px !important;
+                width: auto !important;
+            }
+            
+            
+            .infinite-slider .swiper-slide img {
+                width: auto;
+                height: 100%;
+            }
+
+
+
+    .main-area {
+        width: 100%;
+        height: 100%;
+    }
+
+        .recipes-area {
+            width: 90%;
+            height: 100%;
+            margin: 150px auto 0;
+        }
+
+            .recipes-list-text {
+                margin-bottom: 50px;
+                text-align: center;
+                color: #635F5B;
+            }
+
+        .recipe-lists {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            background-color: white;
+            width: 100%;
+            height: 100%;
+        }
+
+            .recipe-list {
+                background-color: white;
+                width: 370px;
+                height: 350px;
+                margin-top: 30px;
+                border-radius: 5px;
+                box-shadow: 0 0 5px #c3c3c3;
+            }
+
+                .image-content {
+                    width: 100%;
+                    height: 80%;
+                }
+
+                    .recipe-image {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+
+                .recipe-texts {
+                    width: 100%;
+                    height: 20%;
+                    margin: 0 10px;
+                }
+
+                    .recipe-title {
+                        margin: 5px;
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+
+                    .cooking-time {
+                        color: #9a9a9a;
+                        font-size: 14px;
+                    }

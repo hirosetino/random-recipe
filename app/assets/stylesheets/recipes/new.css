@@ -1,0 +1,148 @@
+.recipe-post-container {
+    width: 100%;
+    height: 100%;
+}
+
+    .recipe-post-form {
+        background-color: white;
+        width: 1000px;
+        height: 100%;
+        margin: 30px auto 0;
+        border: 2px solid orange;
+        border-radius: 10px;
+    }
+
+        .recipe-post-main {
+            width: 50%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+            .recipe-post-top {
+                width: 300px;
+                margin: 30px auto 50px;
+                text-align: center;
+            }
+
+            .recipe-post-top h1 {
+                border-bottom: 1px solid orange;
+                font-size: 32px;
+            }
+
+        .recipe-form-area {
+            margin: 10px 0;
+        }
+
+        .recipe-name-text {
+            width: 100%;
+            height: 35px;
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+
+        .select-box {
+            width: 120px;
+            padding-left: 10px;
+        }
+
+        .recipe-post-texts {
+            display: flex;
+            justify-content: space-between;
+            width: 290px;
+        }
+
+            .quantity {
+                width: 100px;
+            }
+
+        .add-food {
+            background-color: #BABABA;
+            width: 100px;
+            margin-top: 10px;
+            box-shadow: 1px 2px gray;
+            text-align: center;
+        }
+
+        .add-food:active {
+            position: relative;
+            top: 2px;
+            left: 1px;
+            box-shadow: none;
+        }
+
+            .add-food-btn {
+                display: inline-block;
+                color: white;
+                font-size: 14px;
+                text-decoration: none;
+            }
+
+        .cooking-method-text {
+            width: 100%;
+            height: 300px;
+            padding: 5px 10px;
+            font-size: 16px;
+        }
+
+            .recipe-post-text {
+                margin-right: 10px;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+        .btn-area {
+            display: flex;
+            flex-direction: column;
+            margin: 50px 0;
+        }
+
+            .recipe-post {
+                width: 50%;
+                margin: 0 auto 30px;
+                box-shadow: 2px 3px gray;
+            }
+
+            .recipe-post:active {
+                position: relative;
+                top: 3px;
+                left: 2px;
+                box-shadow: none;
+            }
+
+                .recipe-post-btn {
+                    background-color: orange;
+                    width: 100%;
+                    padding: 5px 0;
+                    border: none;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: bold;
+                    letter-spacing: 5px;
+                }
+
+            .back {
+                width: 20%;
+                margin: 0 auto;
+                box-shadow: 2px 3px gray;
+            }
+
+            .back:active {
+                position: relative;
+                top: 3px;
+                left: 2px;
+                box-shadow: none;
+            }
+
+                .back-btn {
+                    display: inline-block;
+                    background-color: #bababa;
+                    width: 100%;
+                    padding: 5px 0;
+                    border: none;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: bold;
+                    letter-spacing: 5px;
+                    text-align: center;
+                    text-decoration: none;
+                }
