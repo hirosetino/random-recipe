@@ -1,0 +1,73 @@
+.session-main {
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+    .session-container {
+        width: 300px;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+        .session-top {
+            margin-bottom: 30px;
+            padding: 40px 0 10px 0;
+            border-bottom: 1px solid #D4D2CC;
+        }
+
+            .session-top h1 {
+                color: #635F5B;
+                font-size: 24px;
+            }
+
+    .form-group {
+       margin-bottom: 20px;
+    }
+
+        .form-text {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .form-bottom-text {
+            font-size: 14px;
+        }
+
+            .text-color {
+                color: orange;
+            }
+
+    .input-default {
+        width: 100%;
+        margin-top: 5px;
+        height: 42px;
+        padding: 10px 16px 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        background: #fff;
+        font-size: 16px;
+        resize: none;
+    }
+
+    .info-text {
+        opacity: 0.6;
+        font-size: 14px;
+    }
+
+    .account-login {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+        .account-login-btn {
+            background-color: orange;
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px 0;
+            border: 0px solid orange;
+            border-radius: 20px;
+            color: white;
+            font-weight: bold;
+        }
