@@ -28,15 +28,15 @@
                     <div id="foods-container">
                         <%= food_form.text_field :name %>
                         <%= food_form.text_field :quantity, class: "quantity" %>
-                        <%= link_to '削除', "#", class: "delete-food-btn" %>
+                        <!--<%= link_to '削除', "#", class: "delete-food-btn" %>-->
                     </div>
                 <% end %>
                 <p class="add-form"><%= link_to '材料を追加', "#", id: "add-food-btn" %></p>
                 <div id="foods_fields_template" style="display: none;">
-                    <%= f.fields_for :foods, Food.new, child_index: 'new_ingredients' do |food_form| %>
+                    <%= f.fields_for :foods, Food.new, child_index: 'new_foods' do |food_form| %>
                         <%= food_form.text_field :name %>
                         <%= food_form.text_field :quantity, class: "quantity" %>
-                        <%= link_to '削除', "#", class: "delete-food-btn" %>
+                        <!--<%= link_to '削除', "#", class: "delete-food-btn" %>-->
                     <% end %>
                 </div>
             </div>
@@ -44,15 +44,15 @@
                 <p class="recipe-post-text">作り方<span class="indispensable">(必須)</span></p>
                 <%= f.fields_for :procedures do |procedure_form| %>
                     <div id="procedures-container">
-                        <%= procedure_form.text_field :cooking_method, class: "cooking-method" %>
-                        <%= link_to '削除', "#", class: "delete-procedure-btn" %>
+                        <%= procedure_form.text_area :cooking_method, class: "cooking-method" %>
+                        <!--<%= link_to '削除', "#", class: "delete-procedure-btn" %>-->
                     </div>
                 <% end %>
                 <p class="add-form"><%= link_to '作り方を追加', "#", id: "add-procedure-btn" %></p>
                 <div id="procedures_fields_template" style="display: none;">
                     <%= f.fields_for :procedures, Procedure.new, child_index: 'new_procedures' do |procedure_form| %>
-                        <%= procedure_form.text_field :cooking_method, class: "cooking-method" %>
-                        <%= link_to '削除', "#", class: "delete-procedure-btn" %>
+                        <%= procedure_form.text_area :cooking_method, class: "cooking-method" %>
+                        <!--<%= link_to '削除', "#", class: "delete-procedure-btn" %>-->
                     <% end %>
                 </div>
             </div>
