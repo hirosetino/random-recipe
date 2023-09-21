@@ -34,8 +34,8 @@
             <div class="recipe-form-area">
                 <p class="recipe-post-text">作り方<span class="indispensable">(必須)</span></p>
                 <%= f.fields_for :procedures do |procedure_form| %>
-                    <%= food_form.text_field :cooking_method %>
-                    <%= food_form.check_box :_destroy %> 削除
+                    <%= procedure_form.text_field :cooking_method %>
+                    <%= procedure_form.check_box :_destroy %> 削除
                 <% end %>
                 <p class="add-food"><%= link_to '作り方を追加', "#", class: "add-food-btn" %></p>
             </div>
