@@ -21,12 +21,11 @@
 | cooking_time_id | integer    | null: false                    |
 | user            | references | null: false, foreign_key: true |
 
-
 ### Association
 
 - belongs_to :user
 - has_many :foods
-- has_many :methods
+- has_many :procedures
 
 
 ## foods テーブル
@@ -36,7 +35,6 @@
 | name     | string     | null: false                    |
 | quantity | integer    | null: false                    |
 | recipe   | references | null: false, foreign_key: true |
-
 
 ### Association
 
@@ -49,7 +47,6 @@
 | --------------- | ---------- | ------------------------------ |
 | cooking_method  | text       | null: false                    |
 | recipe          | references | null: false, foreign_key: true |
-
 
 ### Association
 
