@@ -1,0 +1,19 @@
+header {
+    width: 100%;
+    height: 80px;
+    background-color: white;
+}
+
+    .second-header-container {
+        width: 100%;
+        height: 100%;
+        border-bottom: 1px solid #D4D2CC;
+    }
+
+        .second-header-container h1 {
+            margin-left: 100px;
+            line-height: 80px;
+            color: orange;
+            font-size: 36px;
+            text-decoration: none;
+        }
