@@ -43,7 +43,7 @@
 - belongs_to :recipe
 
 
-## methods テーブル
+## procedures テーブル
 
 | Column          | Type       | Option                         |
 | --------------- | ---------- | ------------------------------ |
