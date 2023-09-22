@@ -1,2 +1,27 @@
 <%= render "shared/second-header" %>
 
+<div class="my-page-container">
+    <div class="my-page-area">
+        <div class="information">
+            <p class="information-nickname"><%= @nickname %></p>
+        </div>
+        <div class="my-recipe">
+            <p class="my-recipe-text">投稿一覧</p>
+            <ul class="my-recipe-lists">
+                <% @recipes.each do |recipe| %>
+                    <li class="my-recipe-list">
+                        <%= link_to recipe_path(recipe.id) do %>
+                            <div class="image-content">
+                                <%= image_tag recipe.image, class: "recipe-image" %>
+                            </div>
+                        <% end %>
+                        <div class="recipe-texts">
+                            <p class="recipe-title"><%=link_to recipe.title, recipe_path(recipe.id) %></p>
+                            <p class="cooking-time">調理時間目安：<%= recipe.cooking_time[:name] %></p>
+                        </div>
+                    </li>
+                <% end %>
+            </ul>
+        </div>
+    </div>
+</div>
