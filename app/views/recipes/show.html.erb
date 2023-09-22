@@ -1,2 +1,43 @@
 <%= render "shared/second-header" %>
 
+<div class="show-container">
+    <div class="show-area">
+        <div class="show-recipe">
+            <div class="show-flex">
+                <div class="show-recipe-left">
+                    <div class="show-image-area">
+                        <%= image_tag @recipe.image, class: "show-image" %>
+                    </div>
+                    <h2 class="show-title"><%= @recipe.title %></h2>
+                    <p class="show-cooking-time">調理時間目安：<%= @recipe.cooking_time[:name] %></p>
+                </div>
+
+                <div class="show-recipe-right">
+                    <p class="food-texts-title">材料</p>
+                    <ul class="food-area">
+                        <% @recipe.foods.each do |food| %>
+                            <div class="food-flex">
+                                <li class="show-food-text"><%= food.name %></li>
+                                <li class="show-food-text"><%= food.quantity %></li>
+                            </div>
+                        <% end %>
+                    </ul>
+                    <p class="procedure-texts-title">作り方</p>
+                    <ol class="procedure-area">
+                        <% @recipe.procedures.each do |procedure| %>
+                            <li class="show-procedure"><%= procedure.cooking_method %></li>
+                        <% end %>
+                    </ol>
+                </div>
+            </div>
+            <div class="show-button-area">
+                <div class="edit">
+                    <%= link_to '編集', "#", class: "edit-btn" %>
+                </div>
+                <div class="delete">
+                    <%= link_to '削除', "#", class: "delete-btn" %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
