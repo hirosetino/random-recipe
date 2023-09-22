@@ -21,14 +21,15 @@
         <div class="main-area">
             <div class="recipes-container">
                 <div class="recipes-list-text">
-                    <h2>レシピ一覧</h2>
+                    <%= image_tag 'フォークとナイフのお食事アイコン素材2.png', class: "text-icon" %>
+                    <h2 class="recipe-lists-title">レシピ一覧</h2>
                 </div>
                 <div class="recipe-area">
                     <ul class="recipe-lists">
                         <% @recipes.each do |recipe| %>
                             <li class="recipe-list">
                                 <div class="image-content">
-                                    <%= image_tag recipe.image, class: "recipe-image" %>
+                                   <%= image_tag recipe.image, class: "recipe-image" %>
                                 </div>
                                 <div class="recipe-texts">
                                     <p class="recipe-title"><%= recipe.title %></p>
