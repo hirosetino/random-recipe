@@ -1,6 +1,7 @@
 class RecipesController < ApplicationController
-    before_action :authenticate_user!, only: [:new, :create]
+    before_action :authenticate_user!, only: [:new, :create, :edit, :destroy]
     before_action :find_recipe, only: [:show, :edit, :update, :destroy]
+    before_action :move_to_index, only: [:edit, :destroy]
 
     def index
         @recipes = Recipe.all
@@ -47,5 +48,11 @@ class RecipesController < ApplicationController
 
     def find_recipe
         @recipe = Recipe.find(params[:id])
+    end
+
+    def move_to_index
+        unless @recipe.user_id == current_user.id
+            redirect_to root_path
+        end
     end
 end

@@ -30,6 +30,7 @@
                     </ol>
                 </div>
             </div>
+            <% if user_signed_in? && current_user.id == @recipe.user_id %>
             <div class="show-button-area">
                 <div class="edit">
                     <%= link_to '編集', edit_recipe_path(@recipe.id), class: "edit-btn" %>
@@ -38,6 +39,7 @@
                     <%= link_to '削除', recipe_path(@recipe.id), data: { turbo_method: :delete } , class: "delete-btn" %>
                 </div>
             </div>
+            <% end %>
         </div>
     </div>
 </div>
