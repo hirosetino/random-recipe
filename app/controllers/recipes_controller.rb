@@ -1,5 +1,6 @@
 class RecipesController < ApplicationController
     before_action :authenticate_user!, only: [:new, :create]
+    before_action :find_recipe, only: [:show, :edit, :update]
 
     def index
         @recipes = Recipe.all
@@ -21,15 +22,25 @@ class RecipesController < ApplicationController
     end
 
     def show
-        @recipe = Recipe.find(params[:id])
     end
 
     def edit
-        @recipe = Recipe.find(params[:id])
+    end
+
+    def update
+        if @recipe.update(recipe_params)
+            redirect_to recipe_path(@recipe.id)
+        else
+            render :edit, status: :unprocessable_entity
+        end
     end
 
     private
     def recipe_params
         params.require(:recipe).permit(:image, :title, :cooking_time_id, foods_attributes: [:id, :name, :quantity, :_destroy], procedures_attributes: [:id, :cooking_method, :_destroy]).merge(user_id: current_user.id)
+    end
+
+    def find_recipe
+        @recipe = Recipe.find(params[:id])
     end
 end
