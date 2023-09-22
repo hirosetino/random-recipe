@@ -18,7 +18,30 @@
             </div>
         </div>
 
-
-
+        <div class="main-area">
+            <div class="recipes-container">
+                <div class="recipes-list-text">
+                    <%= image_tag 'フォークとナイフのお食事アイコン素材2.png', class: "text-icon" %>
+                    <h2 class="recipe-lists-title">レシピ一覧</h2>
+                </div>
+                <div class="recipe-area">
+                    <ul class="recipe-lists">
+                        <% @recipes.each do |recipe| %>
+                            <li class="recipe-list">
+                                <%= link_to recipe_path(recipe.id) do %>
+                                    <div class="image-content">
+                                        <%= image_tag recipe.image, class: "recipe-image" %>
+                                    </div>
+                                <% end %>
+                                <div class="recipe-texts">
+                                    <p class="recipe-title"><%=link_to recipe.title, recipe_path(recipe.id) %></p>
+                                    <p class="cooking-time">調理時間目安：<%= recipe.cooking_time[:name] %></p>
+                                </div>
+                            </li>
+                        <% end %>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
