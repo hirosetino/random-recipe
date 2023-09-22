@@ -1,0 +1,72 @@
+<%= render "shared/second-header" %>
+
+<div class="recipe-post-container">
+    <%= form_with model: @recipe, class: 'recipe-post-form', local: true do |f| %>
+        <div class="recipe-post-main">
+            <div class="recipe-post-top">
+                <h1>レシピ編集</h1>
+            </div>
+            <div id="preview"></div>
+            <div class="recipe-form-area">
+                <p class="recipe-post-text">料理写真<span class="indispensable">(必須)</span></p>
+                <%= f.file_field :image, id:"recipe-image" %>
+            </div>
+            <div class="recipe-form-area">
+                <p class="recipe-post-text">料理名<span class="indispensable">(必須)</span></p>
+                <%= f.text_area :title, class:"recipe-title-text", id:"recipe-title", maxlength:"40" %>
+            </div>
+            <div class="recipe-form-area">
+                <p class="recipe-post-text">調理時間<span class="indispensable">(必須)</span></p>
+                <%= f.collection_select(:cooking_time_id, CookingTime.all, :id, :name, {}, {class:"select-box", id:"cooking_time"}) %>
+            </div>
+            <div class="recipe-form-area">
+                <div class="recipe-post-texts">
+                    <p class="recipe-post-text">材料<span class="indispensable">(必須)</span></p>
+                    <p class="recipe-post-text">数量<span class="indispensable">(必須)</span></p>
+                </div>
+                <%= f.fields_for :foods do |food_form| %>
+                    <div id="foods-container">
+                        <%= food_form.text_field :name %>
+                        <%= food_form.text_field :quantity, class: "quantity" %>
+                        <!--<%= link_to '削除', "#", class: "delete-food-btn" %>-->
+                    </div>
+                <% end %>
+                <p class="add-form"><%= link_to '材料を追加', "#", id: "add-food-btn" %></p>
+                <div id="foods_fields_template" style="display: none;">
+                    <%= f.fields_for :foods, Food.new, child_index: 'new_foods' do |food_form| %>
+                        <%= food_form.text_field :name %>
+                        <%= food_form.text_field :quantity, class: "quantity" %>
+                        <!--<%= link_to '削除', "#", class: "delete-food-btn" %>-->
+                    <% end %>
+                </div>
+            </div>
+            <div class="recipe-form-area">
+                <p class="recipe-post-text">作り方<span class="indispensable">(必須)</span></p>
+                <%= f.fields_for :procedures do |procedure_form| %>
+                    <div id="procedures-container">
+                        <%= procedure_form.text_area :cooking_method, class: "cooking-method" %>
+                        <!--<%= link_to '削除', "#", class: "delete-procedure-btn" %>-->
+                    </div>
+                <% end %>
+                <p class="add-form"><%= link_to '作り方を追加', "#", id: "add-procedure-btn" %></p>
+                <div id="procedures_fields_template" style="display: none;">
+                    <%= f.fields_for :procedures, Procedure.new, child_index: 'new_procedures' do |procedure_form| %>
+                        <%= procedure_form.text_area :cooking_method, class: "cooking-method" %>
+                        <!--<%= link_to '削除', "#", class: "delete-procedure-btn" %>-->
+                    <% end %>
+                </div>
+            </div>
+
+
+            <div class="btn-area">
+                <div class="recipe-post">
+                    <%= f.submit "編集" ,class:"recipe-post-btn" %>
+                </div>
+                <div class="back">
+                    <%=link_to '戻る', root_path, class:"back-btn" %>
+                </div>
+            </div>
+        </div>
+    <% end %>
+</div>
+
