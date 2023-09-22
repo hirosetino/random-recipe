@@ -118,8 +118,13 @@ body {
 
                         .recipe-title {
                             margin: 5px;
+                        }
+
+                        .recipe-title a {
+                            color: black;
                             font-size: 18px;
                             font-weight: bold;
+                            text-decoration: none;
                         }
 
                         .cooking-time {

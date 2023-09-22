@@ -28,11 +28,13 @@
                     <ul class="recipe-lists">
                         <% @recipes.each do |recipe| %>
                             <li class="recipe-list">
-                                <div class="image-content">
-                                   <%= image_tag recipe.image, class: "recipe-image" %>
-                                </div>
+                                <%= link_to recipe_path(recipe.id) do %>
+                                    <div class="image-content">
+                                        <%= image_tag recipe.image, class: "recipe-image" %>
+                                    </div>
+                                <% end %>
                                 <div class="recipe-texts">
-                                    <p class="recipe-title"><%= recipe.title %></p>
+                                    <p class="recipe-title"><%=link_to recipe.title, recipe_path(recipe.id) %></p>
                                     <p class="cooking-time">調理時間目安：<%= recipe.cooking_time[:name] %></p>
                                 </div>
                             </li>
