@@ -2,6 +2,9 @@
 
 <div class="recipe-post-container">
     <%= form_with model: @recipe, class: 'recipe-post-form', id: 'new_post', local: true do |f| %>
+
+    <%= render 'shared/error_messages', model: @recipe %>
+
         <div class="recipe-post-main">
             <div class="recipe-post-top">
                 <h1>レシピ編集</h1>

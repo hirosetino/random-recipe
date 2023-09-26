@@ -1,0 +1,15 @@
+.error-alert {
+    width: 400px;
+    margin: 0 auto;
+}
+
+    .error-alert ul {
+        margin: 0;
+        padding-top: 20px;
+        list-style-position: inside;
+    }
+
+        .error-message {
+            color: red;
+            font-size: 18px;
+        }
