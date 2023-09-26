@@ -1,13 +1,14 @@
 <%= render "shared/second-header" %>
 
 <div class="recipe-post-container">
-    <%= form_with model: @recipe, class: 'recipe-post-form', local: true do |f| %>
+    <%= form_with model: @recipe, class: 'recipe-post-form', id: 'new_post', local: true do |f| %>
         <div class="recipe-post-main">
             <div class="recipe-post-top">
                 <h1>レシピ情報入力</h1>
             </div>
             <div id="preview"></div>
             <div class="recipe-form-area">
+                <div id="previews"></div>
                 <p class="recipe-post-text">料理写真<span class="indispensable">(必須)</span></p>
                 <%= f.file_field :image, id:"recipe-image" %>
             </div>

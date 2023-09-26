@@ -24,6 +24,21 @@
                 text-align: center;
             }
 
+            #previews {
+                background-image: url(newbackground.jpeg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 333px;
+                margin-bottom: 30px;
+            }
+
+                #previews img {
+                    width: 100%;
+                    height: 350px;
+                }
+
             .recipe-post-top h1 {
                 border-bottom: 1px solid orange;
                 font-size: 32px;
