@@ -1,0 +1,13 @@
+.error-alert {
+    width: 500px;
+    margin: 0 auto;
+}
+
+    .error-alert ul {
+        list-style-position: inside;
+    }
+
+        .error-message {
+            color: red;
+            font-size: 20px;
+        }
