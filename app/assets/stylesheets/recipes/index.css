@@ -51,7 +51,7 @@ body {
     .slot-container {
         width: 100%;
         height: 350px;
-        margin: 100px 0 530px;
+        margin: 100px 0 550px;
     }
 
         .slot-texts {
@@ -179,10 +179,27 @@ body {
                     margin: 0 10px 0 5px;
                 }
 
+        .search-form {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+            .search-input {
+                width: 300px;
+                padding: 5px;
+            }
+
         .recipe-area {
             background-color: white;
             width: 100%;
             padding: 30px 20px 0;
+        }
+
+        .search-btn {
+            position: absolute;
+            width: 38px;
+            height: 38px;
+            border: none;
         }
 
             .recipe-lists {
