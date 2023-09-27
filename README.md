@@ -33,7 +33,7 @@
 | Column   | Type       | Option                         |
 | -------- | ---------- | ------------------------------ |
 | name     | string     | null: false                    |
-| quantity | integer    | null: false                    |
+| quantity | string     | null: false                    |
 | recipe   | references | null: false, foreign_key: true |
 
 ### Association
