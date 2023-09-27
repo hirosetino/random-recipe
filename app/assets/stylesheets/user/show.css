@@ -31,6 +31,8 @@
                 display: flex;
                 justify-content: flex-start;
                 background-color: #F3F3F3;
+                overflow: scroll;
+                height: 500px;
             }
 
             .my-recipe-list {
