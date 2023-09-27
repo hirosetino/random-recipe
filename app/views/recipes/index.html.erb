@@ -44,6 +44,14 @@
                     <%= image_tag 'フォークとナイフのお食事アイコン素材2.png', class: "text-icon" %>
                     <h2 class="recipe-lists-title">レシピ一覧</h2>
                 </div>
+
+                <%= form_with(url: search_recipes_path, local: true, method: :get, class: "search-form") do |form| %>
+                    <%= form.text_field :keyword, placeholder: "レシピを検索する", class: "search-input" %>
+                    <%= form.button nil, class: "search-btn" do %>
+                        <%= image_tag("検索アイコン1.png", alt: "検索") %>
+                    <% end %>
+                <% end %>
+
                 <div class="recipe-area">
                     <ul class="recipe-lists">
                         <% @recipes.each do |recipe| %>
