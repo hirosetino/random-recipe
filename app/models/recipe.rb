@@ -16,10 +16,10 @@ class Recipe < ApplicationRecord
     validates_presence_of :procedures, message: "料理の作り方を入力してください"
 
     def self.search(search)
-        if search != ""
-          Recipe.where('text LIKE(?)', "%#{search}%")
-        else
+      if search.present?
+          Recipe.where('title LIKE ?', "%#{search}%")
+      else
           Recipe.all
-        end
-    end
+      end
+  end
 end

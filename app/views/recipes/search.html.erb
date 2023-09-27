@@ -1,0 +1,75 @@
+<%= render "shared/header" %>
+
+<main>
+    <div class="main-container">
+        <div class="main-top">
+            <div class="main-top-text">
+                <p>自分のレシピを投稿しよう！</p>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper infinite-slider">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"><%= image_tag 'recipe1.jpeg' %></div>
+                    <div class="swiper-slide"><%= image_tag 'recipe2.jpeg' %></div>
+                    <div class="swiper-slide"><%= image_tag 'recipe3.jpeg' %></div>
+                    <div class="swiper-slide"><%= image_tag 'recipe4.jpeg' %></div>
+                    <div class="swiper-slide"><%= image_tag 'recipe5.jpeg' %></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="slot-container">
+            <div class="slot-texts">
+                <p class="slot-text">今日の献立に困ったら...</p>
+                <%= image_tag '矢印アイコン　下6.png', class: "slot-text-img" %>
+                <p class="slot-text">運に任せよう‼️</p>
+            </div>
+            <div class="slot-area">
+                <div class="slot">
+                    <div class="slot-inner" id="slot-inner">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button class="start-button" id="start-button">スタート</button>
+                    <button class="stop-button" id="stop-button">ストップ</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="main-area">
+            <div class="recipes-container">
+                <div class="recipes-list-text">
+                    <%= image_tag 'フォークとナイフのお食事アイコン素材2.png', class: "text-icon" %>
+                    <h2 class="recipe-lists-title">レシピ一覧</h2>
+                </div>
+
+                <%= form_with(url: search_recipes_path, local: true, method: :get, class: "search-form") do |form| %>
+                    <%= form.text_field :keyword, placeholder: "レシピを検索する", class: "search-input" %>
+                    <%= form.button nil, class: "search-btn" do %>
+                        <%= image_tag("検索アイコン1.png", alt: "検索") %>
+                    <% end %>
+                <% end %>
+
+                <div class="recipe-area">
+                    <ul class="recipe-lists">
+                        <% @recipes.each do |recipe| %>
+                            <li class="recipe-list">
+                                <%= link_to recipe_path(recipe.id) do %>
+                                    <div class="image-content">
+                                        <%= image_tag recipe.image, class: "recipe-image" %>
+                                    </div>
+                                <% end %>
+                                <div class="recipe-texts">
+                                    <p class="recipe-title"><%=link_to recipe.title, recipe_path(recipe.id) %></p>
+                                    <p class="cooking-time">調理時間目安：<%= recipe.cooking_time[:name] %></p>
+                                </div>
+                            </li>
+                        <% end %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
