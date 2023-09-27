@@ -1,0 +1,15 @@
+<div class="modal" id="confirmationModal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">確認</h5>
+            <button class="close-modal-button" id="closeModal">&times;</button>
+        </div>
+        <div class="modal-body">
+            本当に削除しますか？
+        </div>
+        <div class="modal-footer">
+            <button class="cancel-modal-button" id="cancelDelete">キャンセル</button>
+            <%= link_to '削除', recipe_path(@recipe.id), data: { turbo_method: :delete }, class: "recipe-delete" %>
+        </div>
+    </div>
+</div>

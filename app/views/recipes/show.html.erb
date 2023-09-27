@@ -1,3 +1,5 @@
+<%= render "shared/modal" %>
+
 <%= render "shared/second-header" %>
 
 <div class="show-container">
@@ -36,7 +38,7 @@
                     <%= link_to '編集', edit_recipe_path(@recipe.id), class: "edit-btn" %>
                 </div>
                 <div class="delete">
-                    <%= link_to '削除', recipe_path(@recipe.id), data: { turbo_method: :delete } , class: "delete-btn" %>
+                    <a href="#" class="delete-btn" id="openModal">削除</a>
                 </div>
             </div>
             <% end %>
