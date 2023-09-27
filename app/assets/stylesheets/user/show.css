@@ -30,8 +30,9 @@
             .my-recipe-lists {
                 display: flex;
                 justify-content: flex-start;
-                background-color: #F3F3F3;
+                flex-wrap: wrap;
                 overflow: scroll;
+                background-color: #F3F3F3;
                 height: 500px;
             }
 
@@ -39,7 +40,7 @@
                 background-color: white;
                 width: 370px;
                 height: 350px;
-                margin: 30px 55px 0;
+                margin: 20px 55px;
                 border-radius: 5px;
                 box-shadow: 0 0 5px #c3c3c3;
             }
