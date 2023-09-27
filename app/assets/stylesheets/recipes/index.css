@@ -3,8 +3,7 @@ body {
 }
 
 .main-container {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
 }
 
     .main-top {
@@ -152,13 +151,11 @@ body {
 
     .main-area {
         width: 100%;
-        height: 100%;
         margin-top: 50px;
     }
 
         .recipes-container {
             width: 90%;
-            height: 100%;
             margin: 0 auto;
         }
 
@@ -213,7 +210,7 @@ body {
                     background-color: white;
                     width: 370px;
                     height: 350px;
-                    margin: 10px 24px 24px;
+                    margin: 24px 24px;
                     border-radius: 5px;
                     box-shadow: 0 0 5px #c3c3c3;
                 }
