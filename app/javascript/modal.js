@@ -24,4 +24,4 @@ document.addEventListener('turbo:load', function () {
             modal.style.display = 'none';
         }
     });
-  });
+});
