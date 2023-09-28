@@ -65,7 +65,9 @@
                                     <p class="recipe-title"><%=link_to recipe.title, recipe_path(recipe.id) %></p>
                                     <div class="recipe-texts-flex">
                                         <p class="cooking-time">調理時間目安：<%= recipe.cooking_time[:name] %></p>
-                                        <%= render "favorites/btn", recipe: recipe %>
+                                        <div id="fovorite-btn<%= recipe.id %>">
+                                            <%= render "favorites/btn", recipe: recipe %>
+                                        </div>
                                     </div>
                                 </div>
                             </li>
