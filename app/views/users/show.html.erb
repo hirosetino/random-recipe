@@ -6,22 +6,52 @@
             <p class="information-nickname"><%= @nickname %></p>
         </div>
         <div class="my-recipe">
-            <p class="my-recipe-text">投稿一覧</p>
-            <ul class="my-recipe-lists">
-                <% @recipes.each do |recipe| %>
-                    <li class="my-recipe-list">
-                        <%= link_to recipe_path(recipe.id) do %>
-                            <div class="image-content">
-                                <%= image_tag recipe.image, class: "recipe-image" %>
+            <div class="recipe-favorite-flex">
+                <button class="my-recipe-text" id="my-recipe-text">投稿一覧</button>
+                <button class="my-favorite-text" id="my-favorite-text">お気に入り一覧</button>
+            </div>
+
+            <div id="my-recipe-lists">
+                <ul class="my-recipe-lists">
+                    <% @recipes.each do |recipe| %>
+                        <li class="my-recipe-list">
+                            <%= link_to recipe_path(recipe.id) do %>
+                                <div class="image-content">
+                                    <%= image_tag recipe.image, class: "recipe-image" %>
+                                </div>
+                            <% end %>
+                            <div class="recipe-texts">
+                                <p class="recipe-title"><%=link_to recipe.title, recipe_path(recipe.id) %></p>
+                                <div class="recipe-texts-flex">
+                                    <p class="cooking-time">調理時間目安：<%= recipe.cooking_time[:name] %></p>
+                                    <%= render "favorites/btn", recipe: recipe %>
+                                </div>
                             </div>
-                        <% end %>
-                        <div class="recipe-texts">
-                            <p class="recipe-title"><%=link_to recipe.title, recipe_path(recipe.id) %></p>
-                            <p class="cooking-time">調理時間目安：<%= recipe.cooking_time[:name] %></p>
-                        </div>
-                    </li>
-                <% end %>
-            </ul>
+                        </li>
+                    <% end %>
+                </ul>
+            </div>
+
+            <div id="my-favorite-lists">
+                <ul class="my-recipe-lists">
+                    <% @favorited_recipes.each do |favorited_recipe| %>
+                        <li class="my-recipe-list">
+                            <%= link_to recipe_path(favorited_recipe.id) do %>
+                                <div class="image-content">
+                                    <%= image_tag favorited_recipe.image, class: "recipe-image" %>
+                                </div>
+                            <% end %>
+                            <div class="recipe-texts">
+                                <p class="recipe-title"><%=link_to favorited_recipe.title, recipe_path(favorited_recipe.id) %></p>
+                                <div class="recipe-texts-flex">
+                                    <p class="cooking-time">調理時間目安：<%= favorited_recipe.cooking_time[:name] %></p>
+                                    <%= render "favorites/btn", recipe: favorited_recipe %>
+                                </div>
+                            </div>
+                        </li>
+                    <% end %>
+                </ul>
+            </div>
         </div>
     </div>
 </div>

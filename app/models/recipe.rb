@@ -6,6 +6,7 @@ class Recipe < ApplicationRecord
     has_many :procedures, inverse_of: :recipe, dependent: :destroy
     accepts_nested_attributes_for :foods, reject_if: :all_blank, allow_destroy: true
     accepts_nested_attributes_for :procedures, reject_if: :all_blank, allow_destroy: true
+    has_many :favorites, dependent: :destroy
 
     has_one_attached :image
 
@@ -21,5 +22,10 @@ class Recipe < ApplicationRecord
       else
           Recipe.all
       end
-  end
+    end
+
+    def favorited_by?(user)
+        favorites.where(user_id: user_id).exists?
+    end
+
 end

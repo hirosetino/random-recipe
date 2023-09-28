@@ -4,6 +4,7 @@ document.addEventListener('turbo:load', function () {
     const cancelDeleteButton = document.getElementById('cancelDelete');
     const modal = document.getElementById('confirmationModal');
 
+    if (!openModalButton) return null;
     openModalButton.addEventListener('click', function (e) {
         e.preventDefault();
         modal.style.display = 'block';
@@ -23,4 +24,4 @@ document.addEventListener('turbo:load', function () {
             modal.style.display = 'none';
         }
     });
-  });
+});

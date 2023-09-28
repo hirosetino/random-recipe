@@ -11,6 +11,7 @@
 ### Association
 
 - has_many :recipes
+- has_many :favorites
 
 
 ## recipes テーブル
@@ -26,6 +27,7 @@
 - belongs_to :user
 - has_many :foods
 - has_many :procedures
+- has_many :favorites
 
 
 ## foods テーブル
@@ -50,4 +52,17 @@
 
 ### Association
 
+- belongs_to :recipe
+
+
+## favorites テーブル
+
+| Column   | Type       | Option                         |
+| -------- | ---------- | ------------------------------ |
+| user     | references | null: false, foreign_key: true |
+| recipe   | references | null: false, foreign_key: true |
+
+### Association
+
+- belongs_to :user
 - belongs_to :recipe

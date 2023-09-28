@@ -1,0 +1,13 @@
+.favorite-area {
+    margin-right: 20px;
+}
+
+    .fa-star {
+        font-size: 20px;
+    }
+
+    .favorite-area a {
+        color: #9F9F9F;
+        font-size: 18px;
+        text-decoration: none;
+    }
