@@ -244,7 +244,13 @@ body {
                             text-decoration: none;
                         }
 
-                        .cooking-time {
-                            color: #9a9a9a;
-                            font-size: 14px;
+                        .recipe-texts-flex {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
                         }
+
+                            .cooking-time {
+                                color: #9a9a9a;
+                                font-size: 14px;
+                            }

@@ -39,9 +39,14 @@
                         font-weight: bold;
                     }
 
-                    .show-cooking-time {
-                        font-size: 18px;
+                    .show-text-flex {
+                        display: flex;
+                        justify-content: space-between;
                     }
+
+                        .show-cooking-time {
+                            font-size: 18px;
+                        }
 
                 .show-recipe-right {
                     width: 40%;
