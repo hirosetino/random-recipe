@@ -22,5 +22,10 @@ class Recipe < ApplicationRecord
       else
           Recipe.all
       end
-  end
+    end
+
+    def favorited_by?(user)
+        favorites.where(user_id: user_id).exists?
+    end
+
 end

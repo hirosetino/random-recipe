@@ -1,15 +1,16 @@
 class FavoritesController < ApplicationController
+    before_action :authenticate_user!
+
     def create
-        recipe = Recipe.find(params[:recipe_id])
-        favorite = current_user.favorites.new(recipe_id: recipe.id)
+        favorite = current_user.favorites.build(recipe_id: params[:recipe_id])
         favorite.save
         redirect_to request.referer
-      end
-      
-      def destroy
-        recipe = Recipe.find(params[:recipe_id])
-        favorite = current_user.favorites.find_by(recipe_id: recipe.id)
+    end
+    
+    def destroy
+        favorite = Favorite.find_by(recipe_id: params[:recipe_id], user_id: current_user.id)
         favorite.destroy
         redirect_to request.referer
-      end
+    end
+
 end
