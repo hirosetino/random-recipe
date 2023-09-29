@@ -1,0 +1,10 @@
+.search-recipes-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+    .search-recipe-area {
+        overflow: scroll;
+        background-color: white;
+        height: 577px;
+    }
