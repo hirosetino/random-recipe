@@ -13,6 +13,7 @@
                     <h2 class="show-title"><%= @recipe.title %></h2>
                     <div class="show-text-flex">
                         <p class="show-cooking-time">調理時間目安：<%= @recipe.cooking_time[:name] %></p>
+                        <p class="show-recipe-user">投稿者：<%= @recipe.user.nickname %></p>
                         <%= render "favorites/btn", recipe: @recipe %>
                     </div>
                 </div>

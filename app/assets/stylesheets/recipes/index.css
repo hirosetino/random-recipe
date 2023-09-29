@@ -209,7 +209,7 @@ body {
                 .recipe-list {
                     background-color: white;
                     width: 370px;
-                    height: 350px;
+                    height: 380px;
                     margin: 24px 24px;
                     border-radius: 5px;
                     box-shadow: 0 0 5px #c3c3c3;
@@ -217,7 +217,7 @@ body {
 
                     .image-content {
                         width: 100%;
-                        height: 80%;
+                        height: 79%;
                     }
 
                         .recipe-image {
@@ -229,12 +229,12 @@ body {
 
                     .recipe-texts {
                         width: 100%;
-                        height: 20%;
-                        margin: 0 10px;
+                        height: 21%;
+                        margin: 0 15px;
                     }
 
                         .recipe-title {
-                            margin: 5px;
+                            margin: 3px 0;
                         }
 
                         .recipe-title a {
@@ -244,13 +244,18 @@ body {
                             text-decoration: none;
                         }
 
+                        .cooking-time {
+                            color: #9a9a9a;
+                            font-size: 14px;
+                        }
+
                         .recipe-texts-flex {
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
                         }
 
-                            .cooking-time {
+                            .recipe-user {
                                 color: #9a9a9a;
                                 font-size: 14px;
                             }

@@ -64,10 +64,10 @@
 
             <div class="btn-area">
                 <div class="recipe-post">
-                    <%= f.submit "編集" ,class:"recipe-post-btn" %>
+                    <%= f.submit "編集", class:"recipe-post-btn" %>
                 </div>
                 <div class="back">
-                    <%=link_to '戻る', recipe_path(@recipe.id), class:"back-btn" %>
+                    <%= link_to '戻る', :back, class:"back-btn" %>
                 </div>
             </div>
         </div>
