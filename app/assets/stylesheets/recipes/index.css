@@ -169,12 +169,13 @@ body {
             }
 
                 .text-icon {
-                    width: 28px;
-                    height: 28px;
+                    width: 30px;
+                    height: 30px;
                 }
 
                 .recipe-lists-title {
-                    margin: 0 10px 0 5px;
+                    margin: 0 10px;
+                    font-size: 28px;
                 }
 
         .search-form {
