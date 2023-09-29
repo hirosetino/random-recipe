@@ -5,7 +5,7 @@ document.addEventListener('turbo:load', () => {
     let recipes = []; // レシピデータを格納する配列
     let animationInterval;
 
-    if (!recipes) return null;
+    if (!startButton) return null;
   
     // レシピデータの取得（先ほどのコードで取得したデータを代入）
     fetch('/recipes.json')
