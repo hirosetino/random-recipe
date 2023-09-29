@@ -1,3 +1,4 @@
+<% if user_signed_in? %>
 <div class="favorite-area">
     <%= turbo_frame_tag dom_id(recipe, :favorite) do %>
         <% if recipe.favorited_by?(current_user) %>
@@ -13,3 +14,4 @@
         <% end %>
     <% end %>
 </div>
+<% end %>
