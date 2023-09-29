@@ -8,6 +8,7 @@ window.addEventListener("turbo:load", () => {
             delay: 0,
             disableOnInteraction: false,
         },
+        allowTouchMove: false,
     });
     window.addEventListener('popstate', function() {
         location.reload();
