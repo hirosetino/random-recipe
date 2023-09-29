@@ -255,7 +255,8 @@ body {
                             align-items: center;
                         }
 
-                            .recipe-user {
+                            .recipe-user a {
                                 color: #9a9a9a;
                                 font-size: 14px;
+                                text-decoration: none;
                             }

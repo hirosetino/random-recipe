@@ -3,6 +3,6 @@ class UsersController < ApplicationController
         user = User.find(params[:id])
         @nickname = user.nickname
         @recipes = user.recipes
-        @favorited_recipes = current_user.favorited_recipes
+        @favorited_recipes = user.favorited_recipes
     end
 end

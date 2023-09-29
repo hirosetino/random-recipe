@@ -24,7 +24,7 @@
                                 <p class="recipe-title"><%=link_to recipe.title, recipe_path(recipe.id) %></p>
                                 <p class="cooking-time">調理時間目安：<%= recipe.cooking_time[:name] %></p>
                                 <div class="recipe-texts-flex">
-                                    <p class="recipe-user">投稿者：<%= recipe.user.nickname %></p>
+                                    <p class="recipe-user"><%= link_to "投稿者：#{recipe.user.nickname}", user_path(recipe.user_id) %></p>
                                     <div id="fovorite-btn<%= recipe.id %>">
                                         <%= render "favorites/btn", recipe: recipe %>
                                     </div>
@@ -48,7 +48,7 @@
                                 <p class="recipe-title"><%=link_to favorited_recipe.title, recipe_path(favorited_recipe.id) %></p>
                                 <p class="cooking-time">調理時間目安：<%= favorited_recipe.cooking_time[:name] %></p>
                                 <div class="recipe-texts-flex">
-                                    <p class="recipe-user">投稿者：<%= favorited_recipe.user.nickname %></p>
+                                    <p class="recipe-user"><%= link_to "投稿者：#{favorited_recipe.user.nickname}", user_path(favorited_recipe.user_id) %></p>
                                     <%= render "favorites/btn", recipe: favorited_recipe %>
                                 </div>
                             </div>
