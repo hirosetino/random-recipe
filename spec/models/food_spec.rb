@@ -17,6 +17,11 @@ RSpec.describe Food, type: :model do
           @food.valid?
           expect(@food.errors.full_messages).to include("Quantity can't be blank")
         end
+        it "recipeが紐付いていないと投稿できない" do
+          @food.recipe = nil
+          @food.valid?
+          expect(@food.errors.full_messages).to include("Recipe must exist")
+        end
       end
   end
 end
