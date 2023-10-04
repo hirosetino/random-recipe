@@ -162,3 +162,7 @@ https://docs.google.com/spreadsheets/d/19oKR7SKHltqvyoABGj3KdR7gGjc8fHsa0vO1UkPO
 % cd rondom-recipe  
 % bundle install
 
+
+# 工夫したポイント
+Swiperというjsのライブラリを使用して画像スライダーをつけた。  
+レシピ削除時にはモーダルが出る様にして即削除となることを防いだ。
