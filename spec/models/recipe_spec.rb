@@ -16,7 +16,7 @@ RSpec.describe Recipe, type: :model do
 
   describe 'レシピ投稿' do
     context '投稿できる場合' do
-      it "image, title, cooking_time_id, name, quantity, cooking_methodが存在すれば投稿できる" do
+      it "image, title, cooking_time_id, foods, procedureが存在すれば投稿できる" do
         expect(@recipe).to be_valid
       end
 
