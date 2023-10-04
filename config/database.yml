@@ -8,7 +8,7 @@ development:
   username: root
   password:
   host: localhost
-  database: random-recipe_development
+  database: rondom-recipe_development
 
 test:
   <<: *default
@@ -16,7 +16,7 @@ test:
   username: root
   password:
   host: localhost
-  database: random-recipe_test
+  database: rondom-recipe_test
 
 production:
   <<: *default
