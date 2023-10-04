@@ -51,6 +51,11 @@ RSpec.describe Recipe, type: :model do
           @recipe.valid?
           expect(@recipe.errors.full_messages).to include("Procedures 料理の作り方を入力してください")
         end
+        it "userが紐付いていないと投稿できない" do
+          @recipe.user = nil
+          @recipe.valid?
+          expect(@recipe.errors.full_messages).to include('User must exist')
+        end
       end
     end
   end
