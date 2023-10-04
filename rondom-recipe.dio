@@ -1,4 +1,59 @@
 <mxfile host="65bd71144e">
+    <diagram id="oRw80vldpoSBohFOB46H" name="ページ2">
+        <mxGraphModel dx="661" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-8" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="Q8QbMA2hhBOSzHxYEUqL-1" target="Q8QbMA2hhBOSzHxYEUqL-2" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-1" value="トップページ" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="40" y="40" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-2" value="ユーザーログインページ" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="40" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-11" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="Q8QbMA2hhBOSzHxYEUqL-3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="140" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-3" value="ユーザー新規登録ページ" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="120" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-12" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="Q8QbMA2hhBOSzHxYEUqL-4" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="220" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-4" value="ユーザーマイページ" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="200" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-13" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="Q8QbMA2hhBOSzHxYEUqL-5" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="300" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-5" value="レシピ投稿ページ" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="280" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-9" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="1" source="Q8QbMA2hhBOSzHxYEUqL-6" target="Q8QbMA2hhBOSzHxYEUqL-7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-10" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" parent="1" source="Q8QbMA2hhBOSzHxYEUqL-6" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="200" y="60" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-6" value="レシピ詳細ページ" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="360" width="160" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-7" value="レシピ編集ページ" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="360" width="160" height="40" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
     <diagram id="GTAkKZBnC6PGG2MkkPDK" name="ページ1">
         <mxGraphModel dx="661" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
             <root>
@@ -75,61 +130,6 @@
                         <mxPoint x="210" y="321" as="sourcePoint"/>
                         <mxPoint x="360" y="170" as="targetPoint"/>
                     </mxGeometry>
-                </mxCell>
-            </root>
-        </mxGraphModel>
-    </diagram>
-    <diagram id="oRw80vldpoSBohFOB46H" name="ページ2">
-        <mxGraphModel dx="661" dy="647" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
-            <root>
-                <mxCell id="0"/>
-                <mxCell id="1" parent="0"/>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-8" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Q8QbMA2hhBOSzHxYEUqL-1" target="Q8QbMA2hhBOSzHxYEUqL-2">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-1" value="トップページ" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="40" y="40" width="120" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-2" value="ユーザーログインページ" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="40" width="160" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-11" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Q8QbMA2hhBOSzHxYEUqL-3">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="200" y="140" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-3" value="ユーザー新規登録ページ" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="120" width="160" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-12" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Q8QbMA2hhBOSzHxYEUqL-4">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="200" y="220" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-4" value="ユーザーマイページ" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="200" width="160" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-13" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Q8QbMA2hhBOSzHxYEUqL-5">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="200" y="300" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-5" value="レシピ投稿ページ" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="280" width="160" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-9" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Q8QbMA2hhBOSzHxYEUqL-6" target="Q8QbMA2hhBOSzHxYEUqL-7">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-10" style="edgeStyle=orthogonalEdgeStyle;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;endArrow=none;endFill=0;" edge="1" parent="1" source="Q8QbMA2hhBOSzHxYEUqL-6">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="200" y="60" as="targetPoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-6" value="レシピ詳細ページ" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="240" y="360" width="160" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="Q8QbMA2hhBOSzHxYEUqL-7" value="レシピ編集ページ" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="480" y="360" width="160" height="40" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
