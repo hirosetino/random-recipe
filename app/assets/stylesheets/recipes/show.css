@@ -218,3 +218,152 @@
                             font-size: 14px;
                         }
 }
+
+@media (max-width: 768px) {
+        .show-recipe {
+            margin: 30px 40px;
+        }
+
+            .show-flex {
+                display: block;
+            }
+
+                .show-recipe-left {
+                    width: 100%;
+                }
+
+                        .show-image {
+                            width: 100%;
+                            height: 400px;
+                            object-fit: cover;
+                        }
+
+                    .show-title {
+                        margin: 10px 0;
+                        font-size: 26px;
+                        font-weight: bold;
+                    }
+
+                        .show-cooking-time {
+                            font-size: 16px;
+                        }
+
+                        .show-recipe-user {
+                            font-size: 16px;
+                        }
+
+                        .show-recipe-user a {
+                            color: black;
+                            font-size: 16px;
+                            text-decoration: none;
+                        }
+
+                .show-recipe-right {
+                    display: flex;
+                    width: 100%;
+                    margin: 0;
+                }
+
+                    .food-responsive {
+                        width: 50%;
+                    }
+
+                        .food-texts-title {
+                            margin: 50px 0 18px;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+
+                        .food-area {
+                            width: 80%;
+                        }
+
+                            .food-flex {
+                                display: flex;
+                                justify-content: space-between;
+                                padding: 10px 3px 3px;
+                                border-bottom: 1px solid #9e9e9e;
+                            }
+
+                                .show-food-text {
+                                    font-size: 14px;
+                                }
+
+                    .procedure-responsive {
+                        width: 50%;
+                    }
+
+                        .procedure-texts-title {
+                            margin: 50px 0 10px;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+
+                        .procedure-area {
+                            list-style-position: inside;
+                        }
+
+                            .show-procedure {
+                                padding: 10px 3px 3px;
+                                border-bottom: 1px solid #9e9e9e;
+                                font-size: 14px;
+                            }
+
+            .show-button-area {
+                display: flex;
+                justify-content: space-between;
+                width: 500px;
+                margin: 50px auto;
+            }
+
+                .edit {
+                    width: 200px;
+                    text-align: center;
+                    box-shadow: 3px 4px #808080;
+                }
+
+                .edit:active {
+                    position: relative;
+                    top: 4px;
+                    left: 3px;
+                    box-shadow: none;
+                }
+
+                    .edit-btn {
+                        display: inline-block;
+                        background-color: orange;
+                        width: 100%;
+                        padding: 5px 0;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: bold;
+                        letter-spacing: 5px;
+                        text-decoration: none;
+                    }
+
+                .delete {
+                    width: 200px;
+                    text-align: center;
+                    box-shadow: 3px 4px #808080;
+                }
+
+                .delete:active {
+                    position: relative;
+                    top: 4px;
+                    left: 3px;
+                    box-shadow: none;
+                }
+
+
+                    .delete-btn {
+                        display: inline-block;
+                        background-color: #BABABA;
+                        width: 100%;
+                        padding: 5px 0;
+                        color: white;
+                        font-size: 18px;
+                        font-weight: bold;
+                        letter-spacing: 5px;
+                        text-decoration: none;
+                    }
+}
