@@ -95,3 +95,14 @@
             box-shadow: 0 0 5px #c3c3c3;
         }
 }
+
+@media (max-width: 768px) {
+    .my-recipe-lists {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow: scroll;
+        background-color: #F3F3F3;
+        height: 73vh;
+    }
+}
