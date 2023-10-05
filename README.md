@@ -68,7 +68,7 @@ https://docs.google.com/spreadsheets/d/19oKR7SKHltqvyoABGj3KdR7gGjc8fHsa0vO1UkPO
 
 
 # 画面遷移図
-[![Image from Gyazo](https://i.gyazo.com/d6045858c0c4b5c0c8a7d1ec9ff094ea.png)](https://gyazo.com/d6045858c0c4b5c0c8a7d1ec9ff094ea)
+[![Image from Gyazo](https://i.gyazo.com/e26d18bc259e7059b3b5d6d6ac1b1aa9.png)](https://gyazo.com/e26d18bc259e7059b3b5d6d6ac1b1aa9)
 
 # 開発環境
 * HTML, CSS
