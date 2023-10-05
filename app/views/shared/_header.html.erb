@@ -10,12 +10,14 @@
                 <% if user_signed_in? %>
                     <li><%= link_to current_user.nickname, user_path(current_user.id), class: "nickname" %></li>
                     <li><%= link_to 'ログアウト', destroy_user_session_path, data: { turbo_method: :delete }, class: "logout" %></li>
+                    <div class="recipes-create"><%= link_to 'レシピ投稿', new_recipe_path, class: "recipes-create-btn" %></div>
                 <% else %>
                     <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
                     <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
+                    <div class="recipes-create"><%= link_to 'レシピ投稿', new_recipe_path, class: "recipes-create-btn" %></div>
                 <% end %>
             </ul>
-            <div class="recipes-create"><%= link_to 'レシピ投稿', new_recipe_path, class: "recipes-create-btn" %></div>
+            
         </div>
     </div>
 </header>
