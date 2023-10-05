@@ -146,24 +146,37 @@ header {
                     text-decoration: none;
                 }
 
-            .header-right {
-                width: 30%;
-                height: 100%;
+        .header-right {
+            width: 30%;
+            height: 100%;
+        }
+
+            .nickname {
+                font-size: 16px;
             }
-    
-                .nickname {
-                    font-size: 16px;
-                }
-    
-                .logout {
-                    font-size: 16px;
-                }
-    
-                .login {
-                    font-size: 16px;
-                }
-    
-                .sign-up {
-                    font-size: 16px;
-                }
+
+            .logout {
+                font-size: 16px;
+            }
+
+            .login {
+                font-size: 16px;
+            }
+
+            .sign-up {
+                font-size: 16px;
+            }
+}
+
+@media (max-width: 768px) {
+        .header-left {
+            display: flex;
+            width: 65%;
+            height: 100%;
+        }
+
+        .header-right {
+            width: 35%;
+            height: 100%;
+        }
 }
