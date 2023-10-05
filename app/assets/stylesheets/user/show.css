@@ -69,3 +69,29 @@
                     border-radius: 5px;
                     box-shadow: 0 0 5px #c3c3c3;
                 }
+
+
+
+@media (max-width: 1024px) {
+    .my-recipe-lists {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        overflow: scroll;
+        background-color: #F3F3F3;
+        height: 535px;
+    }
+
+    #my-favorite-lists {
+        display: none;
+    }
+
+        .my-recipe-list {
+            background-color: white;
+            width: 370px;
+            height: 380px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px #c3c3c3;
+        }
+}
