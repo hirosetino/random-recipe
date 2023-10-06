@@ -297,7 +297,7 @@ body {
             }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .main-top {
         background-image: url('background.jpg');
         background-size: cover;

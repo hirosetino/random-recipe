@@ -33,7 +33,7 @@
         }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .second-header-container {
         display: flex;
         justify-content: flex-start;

@@ -368,7 +368,7 @@
                     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
         .show-recipe {
             margin: 20px;
         }

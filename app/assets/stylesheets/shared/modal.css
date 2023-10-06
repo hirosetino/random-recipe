@@ -96,7 +96,7 @@
 
 
 
-@media (max-width: 375px) {
+@media (max-width: 767px) {
     .modal-content {
         position: absolute;
         top: 50%;
