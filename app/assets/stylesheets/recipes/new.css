@@ -276,15 +276,11 @@
         .recipe-post-texts {
             display: flex;
             justify-content: space-between;
-            width: 92%;
+            width: 96%;
         }
 
-            .name {
-                width: 60%;
-            }
-
             .quantity {
-                width: 38%;
+                width: 32%;
                 margin-bottom: 3px;
             }
 
