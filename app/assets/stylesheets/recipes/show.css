@@ -367,3 +367,138 @@
                         text-decoration: none;
                     }
 }
+
+@media (max-width: 375px) {
+        .show-recipe {
+            margin: 20px;
+        }
+
+            .show-flex {
+                display: block;
+            }
+
+                .show-recipe-left {
+                    width: 100%;
+                }
+
+                    .show-image-area {
+                        width: 100%;
+                    }
+
+                        .show-image {
+                            width: 100%;
+                            height: 40%;
+                            object-fit: cover;
+                        }
+
+                    .show-title {
+                        margin: 10px 0;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+
+                    .show-text-flex {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                    }
+
+                        .show-cooking-time {
+                            font-size: 12px;
+                        }
+
+                        .show-recipe-user {
+                            font-size: 12px;
+                        }
+
+                        .show-recipe-user a {
+                            color: black;
+                            font-size: 12px;
+                            text-decoration: none;
+                        }
+
+                .show-recipe-right {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin: 0;
+                }
+
+                    .food-responsive {
+                        width: 100%;
+                    }
+
+                        .food-texts-title {
+                            margin-bottom: 10px;
+                            font-size: 16px;
+                            font-weight: bold;
+                        }
+
+                        .food-area {
+                            width: 100%;
+                        }
+
+                                .show-food-text {
+                                    font-size: 14px;
+                                }
+
+                    .procedure-responsive {
+                        width: 100%;
+                    }
+
+                    .procedure-texts-title {
+                        margin: 50px 0 10px;
+                        font-size: 16px;
+                        font-weight: bold;
+                    }
+
+                        .show-procedure {
+                            padding: 10px 3px 3px;
+                            border-bottom: 1px solid #9e9e9e;
+                            font-size: 14px;
+                        }
+
+            .show-button-area {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                margin: 30px auto;
+            }
+
+                .edit {
+                    width: 40%;
+                    text-align: center;
+                    box-shadow: 3px 4px #808080;
+                }
+
+                    .edit-btn {
+                        display: inline-block;
+                        background-color: orange;
+                        width: 100%;
+                        padding: 5px 0;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: bold;
+                        letter-spacing: 5px;
+                        text-decoration: none;
+                    }
+
+                .delete {
+                    width: 40%;
+                    text-align: center;
+                    box-shadow: 3px 4px #808080;
+                }
+
+
+                    .delete-btn {
+                        display: inline-block;
+                        background-color: #BABABA;
+                        width: 100%;
+                        padding: 5px 0;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: bold;
+                        letter-spacing: 5px;
+                        text-decoration: none;
+                    }
+}
