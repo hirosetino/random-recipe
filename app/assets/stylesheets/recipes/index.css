@@ -296,3 +296,166 @@ body {
                 flex-wrap: wrap;
             }
 }
+
+@media (max-width: 375px) {
+    .main-top {
+        background-image: url('background.jpg');
+        background-size: cover;
+        height: 300px;
+        margin-top: 1px;
+        padding-top: 80px;
+    }
+
+        .main-top-text {
+            text-align: center;
+            margin: 20px 0;
+            color: #635F5B;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+            .infinite-slider .swiper-slide {
+                height: 230px !important;
+                width: auto !important;
+            }
+            
+            
+            .infinite-slider .swiper-slide img {
+                width: 300px;
+                height: 100%;
+            }
+
+
+
+    .slot-container {
+        width: 100%;
+        height: 350px;
+        margin: 50px 0 150px;
+    }
+
+            .slot-text {
+                margin: 10px;
+                color: #635F5B;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            .slot-text-img {
+                width: 50px;
+                height: 50px;
+                margin: 20px auto;
+            }
+
+            .slot {
+                background-image: url(slot.png);
+                background-size: contain;
+                width: 100%;
+                height: 215px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+
+                .slot-inner {
+                    margin-top: 90px;
+                    transition: top 1s ease-in-out; /* アニメーションの設定 */
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                    .slot-recipe {
+                        width: 250px;
+                        height: 150px;
+                        margin: 0 auto;
+                    }
+
+        .buttons {
+            width: 100%;
+            margin: 20px auto;
+        }
+
+            .start-button {
+                background-color: orange;
+                width: 30%;
+                height: 30px;
+                margin-right: 40px;
+                border: none;
+                box-shadow: 2px 3px gray;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            .stop-button {
+                background-color: #bababa;
+                width: 30%;
+                height: 30px;
+                border: none;
+                box-shadow: 2px 3px gray;
+                color: white;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+
+
+                .recipe-lists-title {
+                    margin: 0 10px;
+                    font-size: 24px;
+                }
+
+            .search-input {
+                width: 70%;
+                padding: 5px;
+            }
+
+        .recipe-area {
+            background-color: white;
+            width: 100%;
+            padding: 30px 20px 20px;
+        }
+
+            .recipe-lists {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
+                .recipe-list {
+                    background-color: white;
+                    width: 100%;
+                    height: 30%;
+                    margin: 20px 0;
+                    border-radius: 5px;
+                    box-shadow: 0 0 5px #c3c3c3;
+                }
+
+                    .image-content {
+                        width: 100%;
+                        height: 80%;
+                    }
+
+                    .recipe-texts {
+                        width: 100%;
+                        height: 20%;
+                        margin: 0 15px;
+                    }
+
+                        .recipe-title a {
+                            color: black;
+                            font-size: 16px;
+                            font-weight: bold;
+                            text-decoration: none;
+                        }
+
+                        .cooking-time {
+                            color: #9a9a9a;
+                            font-size: 12px;
+                        }
+
+                            .recipe-user a {
+                                color: #9a9a9a;
+                                font-size: 12px;
+                                text-decoration: none;
+                            }
+}

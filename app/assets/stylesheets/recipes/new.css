@@ -222,3 +222,111 @@
                 font-weight: bold;
             }
 }
+
+@media (max-width: 375px) {
+    .recipe-post-form {
+        background-color: white;
+        width: 99%;
+        height: 100%;
+        margin: 10px auto;
+        border: 2px solid orange;
+        border-radius: 10px;
+    }
+
+        .recipe-post-main {
+            width: 80%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+            .recipe-post-top {
+                width: 70%;
+                margin: 30px auto;
+                text-align: center;
+            }
+
+                .recipe-post-top h1 {
+                    border-bottom: 1px solid orange;
+                    font-size: 24px;
+                }
+
+            #previews {
+                background-image: url(newbackground.jpeg);
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 222px;
+                margin-bottom: 30px;
+            }
+
+                #previews img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 230px;
+                }
+
+        .recipe-title-text {
+            width: 100%;
+            height: 35px;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        .recipe-post-texts {
+            display: flex;
+            justify-content: space-between;
+            width: 96%;
+        }
+
+            .quantity {
+                width: 32%;
+                margin-bottom: 3px;
+            }
+
+        .add-form {
+            background-color: #BABABA;
+            width: 80px;
+            margin-top: 10px;
+            box-shadow: 1px 2px gray;
+            text-align: center;
+        }
+
+            #add-food-btn {
+                display: inline-block;
+                color: white;
+                font-size: 12px;
+                text-decoration: none;
+            }
+
+            #add-procedure-btn {
+                display: inline-block;
+                color: white;
+                font-size: 12px;
+                text-decoration: none;
+            }
+
+            .recipe-post {
+                width: 70%;
+                margin: 0 auto 30px;
+                box-shadow: 2px 3px gray;
+            }
+
+
+                .recipe-post-btn {
+                    background-color: orange;
+                    width: 100%;
+                    padding: 5px 0;
+                    border: none;
+                    color: white;
+                    font-size: 16px;
+                    font-weight: bold;
+                    letter-spacing: 5px;
+                }
+
+            .back {
+                width: 40%;
+                margin: 0 auto;
+                box-shadow: 2px 3px gray;
+            }
+}

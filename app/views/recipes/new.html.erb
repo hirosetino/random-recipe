@@ -30,7 +30,7 @@
                 </div>
                 <%= f.fields_for :foods do |food_form| %>
                     <div id="foods-container">
-                        <%= food_form.text_field :name %>
+                        <%= food_form.text_field :name, class: "name" %>
                         <%= food_form.text_field :quantity, class: "quantity" %>
                     </div>
                 <% end %>

@@ -10,3 +10,14 @@ footer {
         color: white;
         font-size: 14px;
     }
+
+
+
+@media (max-width: 375px) {
+    .footer-text {
+        text-align: center;
+        line-height: 60px;
+        color: white;
+        font-size: 10px;
+    }
+}

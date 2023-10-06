@@ -106,3 +106,27 @@
         height: 73vh;
     }
 }
+
+@media (max-width: 375px) {
+    .my-recipe-text {
+        background-color: white;
+        width: 500px;
+        padding: 10px 0;
+        border: none;
+        border-bottom: 2px solid black;
+        text-align: center;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .my-favorite-text {
+        background-color: white;
+        width: 500px;
+        padding: 10px 0;
+        border: none;
+        text-align: center;
+        color: #9F9F9F;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}

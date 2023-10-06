@@ -93,3 +93,88 @@
                 background-color: #dddddd;
                 color: gray;
             }
+
+
+
+@media (max-width: 375px) {
+    .modal-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #FEFEFE;
+        width: 70%;
+        height: 40%;
+        border-radius: 10px;
+    }
+
+        .modal-header {
+            display: flex;
+            justify-content: right;
+            width: 100%;
+            height: 30%;
+            padding-right: 10px;
+        }
+
+            .modal-title {
+                font-size: 16px;
+                font-weight: bold;
+                margin-right: 30%;
+            }
+
+            .close-modal-button {
+                background-color: #FEFEFE;
+                width: 26px;
+                height: 26px;
+                border: none;
+                color: gray;
+                font-size: 24px;
+            }
+
+        .modal-body {
+            width: 100%;
+            height: 50%;
+            padding-top: 10%;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        .modal-footer {
+            display: flex;
+            width: 100%;
+            height: 20%;
+            border-top: 2px solid #dddddd;
+        }
+
+            .cancel-modal-button {
+                background-color: #FEFEFE;
+                width: 50%;
+                height: 100%;
+                border: none;
+                border-radius: 0 0 0 10px;
+                font-size: 14px;
+            }
+
+            .cancel-modal-button:hover {
+                background-color: #dddddd;
+                color: gray;
+            }
+
+            .recipe-delete {
+                display: inline-block;
+                width: 50%;
+                height: 100%;
+                border-left: 2px solid #dddddd;
+                text-align: center;
+                line-height: 250%;
+                color: black;
+                font-size: 14px;
+                text-decoration: none;
+            }
+
+            .recipe-delete:hover {
+                background-color: #dddddd;
+                color: gray;
+            }
+}
