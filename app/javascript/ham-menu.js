@@ -1,6 +1,6 @@
 document.addEventListener('turbo:load', function () {
-    const openHumButton = document.getElementById('open-hum');
-    const closeHumButton = document.getElementById('close-hum');
+    const openHumButton = document.getElementById('open_hum');
+    const closeHumButton = document.getElementById('close_hum');
     const humMenu = document.getElementById('hum_menu');
 
     if (!openHumButton) return null;
