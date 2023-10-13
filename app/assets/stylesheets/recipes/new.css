@@ -67,6 +67,10 @@
             width: 290px;
         }
 
+            #foods-container {
+                width: 60%;
+            }
+
             .quantity {
                 width: 100px;
                 margin-bottom: 3px;
